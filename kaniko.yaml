@@ -7,7 +7,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
     args: [ "--dockerfile=./nginx/Dockerfile",
-            "--context=git://github.com/kangbock/jenkins.git#refs/heads/main",
+            "--context=git://github.com/kangbock/kaniko.git#refs/heads/main",
             "--destination=kangbock/nginx",
             "--skip-tls-verify=true",
             "--insecure=true" ]
